@@ -1,0 +1,8 @@
+dist/
+npm-debug.log
+node_modules
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+src/assets/scss/sprite-base.scss
+src/assets/images/sprite/sprite-base.png

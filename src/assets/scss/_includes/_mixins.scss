@@ -1,0 +1,44 @@
+/* --------- mixins --------- */
+
+@mixin inlineblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@mixin clearfix {
+
+    &:before,
+    &:after {
+        content: " "; display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin hover-underline {
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin placecolor($color: #000000) {
+
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}

@@ -1,0 +1,52 @@
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    @include rem-baseline;
+}
+
+body {
+
+}
+
+h2 {
+    @include rem((
+        font-size: 48px
+    ));
+    font-weight: 300;
+    line-height: 1.08;
+    color: $dark;
+}
+
+input[type=file] {
+    outline: 0;
+    display: block;
+    font: caption;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-weight: 700;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+.block-title-block {
+    text-align: center;
+
+    h2 {
+        @include rem((
+            padding-top: 80px,
+            padding-bottom: 50px
+        ));
+    }
+}

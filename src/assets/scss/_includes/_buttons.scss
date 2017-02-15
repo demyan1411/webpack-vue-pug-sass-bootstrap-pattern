@@ -1,0 +1,24 @@
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+    outline: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    @include rem((
+        width: 232px,
+        line-height: 48px,
+        font-size: 14px
+    ));
+
+    &.disabled,
+    &:disabled {
+        pointer-events: none;
+    }
+}

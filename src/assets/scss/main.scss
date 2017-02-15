@@ -1,0 +1,26 @@
+/* --------- variables --------- */
+
+@import "_includes/variables";
+
+/* -------- libs ------- */
+
+@import "~bootstrap/scss/bootstrap";
+
+/* --------- mixins --------- */
+
+@import "~sass-rem/rem";
+@import "_includes/mixins";
+
+/* --------- fonts --------- */
+
+@import "_includes/fonts";
+
+/* --------- partials --------- */
+
+@import "_includes/type";
+@import "_includes/buttons";
+
+@import "./default";
+
+@import "partials/header";
+@import "partials/footer";

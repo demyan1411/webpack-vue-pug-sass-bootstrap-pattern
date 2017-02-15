@@ -1,0 +1,25 @@
+header.main-header
+    .container
+        .row
+            .col-xs-12.clearfix
+                .float-lg-left
+                    .logo
+                        a(href='index.html')
+                            img(src=require('assets/images/logo.svg'))
+
+                label.mobile-menu(for='mobile-input')
+                    .mobile-trigger |||
+
+                input.mobile-input(id='mobile-input' type='checkbox')
+
+                .float-lg-right
+                    .navbar
+                        nav
+                            ul.nav.navbar-nav.js-scroll
+                                li.nav-item
+                                    a.nav-link(href='#facts') Facts
+                                li.nav-item
+                                    a.nav-link(href='#join-team') Join the A Team
+
+                                li.nav-item
+                                    a.nav-link(href='#positions') Open Positions
